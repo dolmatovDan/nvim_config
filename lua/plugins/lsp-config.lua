@@ -44,8 +44,8 @@ return {
 
       vim.keymap.set("n", "K", "<cmd>lua vim.lsp.buf.hover()<cr>", {})
       vim.keymap.set("n", "<leader>gd", "<cmd>lua vim.lsp.buf.definition()<cr>", {})
-      -- vim.keymap.set("n", "<leader>gD", "<cmd>lua vim.lsp.buf.declaration()<cr>", {})
-      -- vim.keymap.set("n", "<leader>gi", "<cmd>lua vim.lsp.buf.implementation()<cr>", {})
+      vim.keymap.set("n", "<leader>gD", "<cmd>lua vim.lsp.buf.declaration()<cr>", {})
+      vim.keymap.set("n", "<leader>gi", "<cmd>lua vim.lsp.buf.implementation()<cr>", {})
       -- vim.keymap.set("n", "<leader>go", "<cmd>lua vim.lsp.buf.type_definition()<cr>", {})
 
       vim.keymap.set("n", "<leader>gcr", "<cmd>lua vim.lsp.buf.references()<cr>", {})
