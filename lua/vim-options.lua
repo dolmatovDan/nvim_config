@@ -12,7 +12,9 @@ vim.cmd("set mouse=a")
 vim.cmd("set noswapfile")
 vim.cmd("set scrolloff=7")
 
+
 vim.g.mapleader = " "
 vim.g.background = "light"
 
 vim.opt.swapfile = false
+vim.opt.colorcolumn = "100"
