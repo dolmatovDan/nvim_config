@@ -44,3 +44,5 @@ vim.keymap.set("n", "<leader>x", "<cmd>!chmod +x %<CR>", { silent = true })
 -- End Primeagen
 
 vim.keymap.set("n", "<Enter>", ":call append(line('.'), '')<CR>")
+vim.keymap.set("n", "<leader>bl", ":bnext<CR>")
+vim.keymap.set("n", "<leader>bh", ":bprev<CR>")
