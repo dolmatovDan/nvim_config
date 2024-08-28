@@ -30,7 +30,7 @@ return {
           vim.keymap.set("n", "<leader>gD", "<CMD>lua vim.lsp.buf.declaration()<CR>", opts)
           vim.keymap.set("n", "<leader>gi", "<CMD>lua vim.lsp.buf.implementation()<CR>", opts)
           -- vim.keymap.set("n", "<leader>go", "<CMD>lua vim.lsp.buf.type_definition()<CR>", opts)
-          vim.keymap.set("n", "<leader>gCR", "<CMD>lua vim.lsp.buf.references()<CR>", opts)
+          vim.keymap.set("n", "<leader>gcr", "<CMD>lua vim.lsp.buf.references()<CR>", opts)
           vim.keymap.set("n", "<leader>gr", "<CMD>Telescope lsp_references<CR>", opts)
 
           -- vim.keymap.set("n", "<leader>gs", "<CMD>lua vim.lsp.buf.signature_help()<CR>", opts)

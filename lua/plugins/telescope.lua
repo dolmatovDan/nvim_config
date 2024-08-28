@@ -18,6 +18,7 @@ return {
       vim.keymap.set("n", "<leader>ff", builtin.find_files, {})
       vim.keymap.set("n", "<leader>fs", builtin.live_grep, {})
       vim.keymap.set("n", "<leader><leader>", builtin.oldfiles, {})
+      vim.keymap.set("n", "<leader>vh", ":Telescope help_tags<CR>")
 
       require("telescope").load_extension("ui-select")
       require("telescope").load_extension("harpoon")

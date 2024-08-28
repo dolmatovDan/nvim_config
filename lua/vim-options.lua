@@ -18,4 +18,7 @@ vim.g.background = "light"
 
 
 vim.opt.swapfile = false
-vim.opt.colorcolumn = "100"
+vim.opt.colorcolumn = "80"
+
+
+-- For latex

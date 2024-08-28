@@ -22,6 +22,7 @@ return {
 					"rust",
 				},
 			})
+      vim.keymap.set("n", "<leader>tsh", ":TSToggle highlight<CR>")
 		end,
 	},
 }
