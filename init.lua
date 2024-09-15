@@ -16,3 +16,5 @@ require("vim-remaps")
 require("ftplugin.cpp")
 require("ftplugin.tex")
 require("lazy").setup("plugins")
+
+vim.api.nvim_create_autocmd({ "FIleType" }, { pattern = "tex" , group = optional_group, command = "TSBufDisable highlight" })

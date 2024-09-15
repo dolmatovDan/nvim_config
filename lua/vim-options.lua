@@ -12,6 +12,8 @@ vim.cmd("set mouse=a")
 vim.cmd("set noswapfile")
 vim.cmd("set scrolloff=7")
 
+vim.opt.wildmenu = true
+vim.opt.wildmode = "full"
 
 vim.g.mapleader = " "
 vim.g.background = "light"

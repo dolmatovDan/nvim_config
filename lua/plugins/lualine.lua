@@ -1,13 +1,24 @@
 return {
-	{
-		"nvim-lualine/lualine.nvim",
-		dependencies = { "nvim-tree/nvim-web-devicons" },
-		config = function()
-			require("lualine").setup({
-				options = {
-					theme = "monokai-pro",
-				},
-			})
-		end,
-	},
+  {
+    "nvim-lualine/lualine.nvim",
+    dependencies = { "nvim-tree/nvim-web-devicons" },
+    config = function()
+      require("lualine").setup({
+        options = {
+          icons_enabled = true,
+          component_separators = "|",
+          section_separators = "",
+          theme = "monokai-pro",
+        },
+        sections = {
+          lualine_x = {},
+          lualine_a = {
+            {
+              "buffers",
+            },
+          },
+        },
+      })
+    end,
+  },
 }

@@ -12,6 +12,7 @@ return {
 					"bash",
 					"c",
 					"cpp",
+					"c_sharp",
 					"glsl",
 					"haskell",
 					"hlsl",
