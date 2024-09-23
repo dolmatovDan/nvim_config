@@ -32,9 +32,10 @@ vim.keymap.set("n", "<leader>Y", '"+Y')
 vim.keymap.set("n", "<leader>d", '"+d')
 vim.keymap.set("v", "<leader>d", '"+d')
 
+vim.keymap.set("n", "<leader>c", '"+c')
+vim.keymap.set("v", "<leader>c", '"+c')
+
 vim.keymap.set("n", "Q", "<nop>")
--- Enable, when i'll start using tmux
--- vim.keymap.set("n", "<C-f>", "<cmd>silent !tmux neww tmux-sessionizer<CR>")
 
 -- quick fixes
 vim.keymap.set("n", "<C-k>", "<cmd>cnext<CR>zz")
@@ -52,3 +53,7 @@ vim.keymap.set("n", "[b", ":bprev<CR>")
 vim.keymap.set("n", "]B", ":bfirst<CR>")
 vim.keymap.set("n", "[B", ":bnext<CR>")
 vim.keymap.set("n", "bd", ":bdelete<CR>")
+
+vim.keymap.set("c", "%%", "getcmdtype() == ':' ? expand('%:h').'/' : '%%'", {expr = true})
+
+vim.keymap.set("i", "<C-BS>", "<C-w>")

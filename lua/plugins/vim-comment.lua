@@ -1,6 +1,17 @@
 return {
-	"terrortylor/nvim-comment",
-	config = function()
-		require("nvim_comment").setup({})
-	end,
+  "numtostr/comment.nvim",
+  enabled = true,
+  -- event = "verylazy",
+  keys = {
+    { "<leader>/", mode = { "n", "v" } },
+  },
+  opts = {
+    toggler = {
+      line = "<leader>/",
+    },
+    opleader = {
+      line = "<leader>/",
+    },
+  },
 }
+

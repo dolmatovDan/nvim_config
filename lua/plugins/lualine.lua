@@ -10,14 +10,6 @@ return {
           section_separators = "",
           theme = "monokai-pro",
         },
-        sections = {
-          lualine_x = {},
-          lualine_a = {
-            {
-              "buffers",
-            },
-          },
-        },
       })
     end,
   },

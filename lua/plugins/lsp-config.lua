@@ -36,7 +36,7 @@ return {
 					-- vim.keymap.set("n", "<leader>gs", "<CMD>lua vim.lsp.buf.signature_help()<CR>", opts)
 					vim.keymap.set("n", "<leader>rn", "<CMD>lua vim.lsp.buf.rename()<CR>", opts)
 					-- vim.keymap.set(opts, "<F3>", "<CMD>lua vim.lsp.buf.format({async = true})<CR>", opts)
-					vim.keymap.set("n", "<leader>ca", "<CMD>lua vim.lsp.buf.code_action()<CR>", opts)
+					-- vim.keymap.set("n", "<leader>ca", "<CMD>lua vim.lsp.buf.code_action()<CR>", opts) -- Instead of this, i use actions-preview
 					-- vim.keymap.set("n", "gl", "<CMD>lua vim.diagnostic.open_float()<CR>", opts)
 					vim.keymap.set("n", "[d", "<CMD>lua vim.diagnostic.goto_prev()<CR>", opts)
 					vim.keymap.set("n", "]d", "<CMD>lua vim.diagnostic.goto_next()<CR>", opts)
@@ -88,9 +88,12 @@ return {
 					"--hostPID",
 					tostring(vim.fn.getpid()),
 				},
-				on_attach = function(client, bufnr)
-					-- Настройте свои клавиши и другие параметры здесь
-				end,
+				capabilities = capabilities,
+				enable_roslyn_analysers = true,
+				enable_import_completion = true,
+				organize_imports_on_format = true,
+				enable_decompilation_support = true,
+				filetypes = { "cs", "vb", "csproj", "sln", "slnx", "props", "csx", "targets" },
 			})
 		end,
 	},
