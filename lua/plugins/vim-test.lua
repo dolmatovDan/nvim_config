@@ -9,6 +9,6 @@ return {
     vim.keymap.set("n", "<leader>ta", ":TestSuite<CR>", {})
     vim.keymap.set("n", "<leader>tl", ":TestLast<CR>", {})
     vim.keymap.set("n", "<leader>tg", ":TestVisit<CR>", {})
-    vim.cmd("let test#strategy = 'vimux'")
+    vim.cmd("let test#strategy = 'toggleterm'")
   end,
 }
