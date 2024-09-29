@@ -1,7 +1,7 @@
 return {
-	"chentoast/marks.nvim",
-	event = "VeryLazy",
-	config = function()
-		require("marks").setup({})
-	end,
+  "chentoast/marks.nvim",
+  event = "VeryLazy",
+  config = function()
+    require("marks").setup({})
+  end,
 }
