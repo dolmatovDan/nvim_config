@@ -60,4 +60,4 @@ vim.keymap.set("n", "<C-o>", "<C-o>zz")
 vim.keymap.set("n", "<C-i>", "<C-i>zz")
 vim.keymap.set("n", "G", "Gzz")
 
-vim.keymap.set("v", "<leader>cts", ":s/\\S/&/g<CR>")
+vim.keymap.set("v", "<leader>cs", ":s/\\S/&/g<CR>")
