@@ -1,7 +1,8 @@
 return {
-	"loctvl842/monokai-pro.nvim",
-	config = function()
-		require("monokai-pro").setup({})
-		vim.cmd([[colorscheme monokai-pro]])
-	end,
+	{
+		"morhetz/gruvbox",
+		config = function()
+			vim.cmd.colorscheme("gruvbox")
+		end,
+	},
 }

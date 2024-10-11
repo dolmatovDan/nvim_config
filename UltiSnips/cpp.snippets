@@ -1,0 +1,60 @@
+snippet beg "default template"
+#ifdef LOCAL
+#define _GLIBCXX_DEBUG 1
+#endif
+#include <bits/stdc++.h>
+using namespace std;
+#define sz(a) (int)((a).size())
+
+template <class T, class V>
+ostream &operator<<(ostream &os, pair<T, V> const &p) {
+  return os << "{" << p.first << "," << p.second << "}";
+}
+template <class T, class V, class Container>
+basic_ostream<T, V> &operator<<(basic_ostream<T, V> &os, Container const &x) {
+  os << "[ ";
+  for (auto &y : x)
+    os << y << " ";
+  return os << "]";
+}
+template <typename T> bool chmin(T &a, T b) { return (b < a) ? a = b, 1 : 0; }
+template <typename T> bool chmax(T &a, T b) { return (b > a) ? a = b, 1 : 0; }
+
+#ifdef LOCAL
+void deb_out() { cerr << endl; }
+template <typename Head, typename... Tail> void deb_out(Head H, Tail... T) {
+  cerr << " " << H;
+  deb_out(T...);
+}
+#define deb(...) cerr << "(" << #__VA_ARGS__ << "):", deb_out(__VA_ARGS__)
+#else
+#define deb(...) 1
+#endif
+
+mt19937 rnd(chrono::steady_clock::now().time_since_epoch().count());
+
+typedef long long ll;
+typedef long double ld;
+
+void solve_test() {
+  $0
+}
+
+signed main() {
+  ios::sync_with_stdio(false);
+  cin.tie(nullptr);
+  int tt = 1;
+  cin >> tt;
+  for (int i = 1; i <= tt; ++i) {
+    solve_test();
+#ifdef LOCAL
+    cout << "_____________________" << endl;
+#endif
+  }
+#ifdef LOCAL
+  cerr << endl << "Elapsed time: " << 1. * clock() / CLOCKS_PER_SEC << '\n';
+#endif
+  return 0;
+}
+
+endsnippet

@@ -8,7 +8,7 @@ return {
           icons_enabled = true,
           component_separators = "|",
           section_separators = "",
-          theme = "monokai-pro",
+          theme = "gruvbox",
         },
       })
     end,
