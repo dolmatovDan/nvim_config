@@ -1,14 +1,14 @@
 return {
-	{
-		"RRethy/vim-illuminate",
-		dependencies = {
-			"nvim-treesitter/nvim-treesitter",
-		},
-		config = function()
-			require("illuminate").configure({
-				modes_allowlist = { "n" },
-			})
-			vim.cmd([[
+  {
+    "RRethy/vim-illuminate",
+    dependencies = {
+      "nvim-treesitter/nvim-treesitter",
+    },
+    config = function()
+      require("illuminate").configure({
+        modes_allowlist = { "n" },
+      })
+      vim.cmd([[
                 augroup illuminate_augroup
                     autocmd!
                     autocmd VimEnter * hi illuminatedWordRead cterm=none gui=none guibg=#526252
@@ -16,6 +16,6 @@ return {
                     autocmd VimEnter * hi illuminatedWordWrite cterm=none gui=none guibg=#625252
                 augroup END
             ]])
-		end,
-	},
+    end,
+  },
 }
