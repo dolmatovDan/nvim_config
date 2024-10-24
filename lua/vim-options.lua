@@ -22,4 +22,4 @@ vim.g.background = "light"
 
 
 vim.opt.swapfile = false
-vim.opt.colorcolumn = "120"
+vim.opt.colorcolumn = "100"

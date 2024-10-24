@@ -36,6 +36,7 @@ return {
           vim.keymap.set("n", "<leader>gl", "<CMD>lua vim.diagnostic.open_float()<CR>", opts)
           vim.keymap.set("n", "[d", "<CMD>lua vim.diagnostic.goto_prev()<CR>", opts)
           vim.keymap.set("n", "]d", "<CMD>lua vim.diagnostic.goto_next()<CR>", opts)
+          vim.keymap.set("n", "<leader>lr", ":LspRestart<CR>", opts)
         end,
       })
     end,
