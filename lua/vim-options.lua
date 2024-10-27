@@ -11,6 +11,8 @@ vim.cmd("se cursorline")
 vim.cmd("set mouse=a")
 vim.cmd("set noswapfile")
 vim.cmd("set scrolloff=7")
+vim.cmd("set ignorecase")
+vim.cmd("set smartcase")
 
 vim.cmd("filetype plugin on")
 
