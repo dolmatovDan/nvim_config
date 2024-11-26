@@ -22,6 +22,5 @@ vim.opt.wildmode = "full"
 vim.g.mapleader = " "
 vim.g.background = "light"
 
-
 vim.opt.swapfile = false
 vim.opt.colorcolumn = "100"
