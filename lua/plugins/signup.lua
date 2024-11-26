@@ -8,8 +8,8 @@ return {
 			timer = nil,
 			visible = false,
 			current_signatures = nil,
-			enabled = false,
-			-- enabled = true,
+			-- enabled = false,
+			enabled = true,
 			normal_mode_active = false,
 			config = {
 				silent = false,
@@ -31,7 +31,7 @@ return {
 				border = "solid",
 				winblend = 10,
 			},
-			toggle_key = "<C-l>",
+			-- toggle_key = "<C-l>",
 		})
 	end,
 }
