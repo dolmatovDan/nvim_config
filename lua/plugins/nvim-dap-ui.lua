@@ -12,6 +12,9 @@ return {
     config = function()
       print("dap")
       local dapui = require("dapui")
+      vim.keymap.set("n", "<leader>?", function()
+        dapui.eval(nil, { enter = true })
+      end)
 
       dapui.setup()
 
