@@ -21,3 +21,5 @@ vim.api.nvim_create_autocmd(
   { "FIleType" },
   { pattern = "tex", group = optional_group, command = "TSBufDisable highlight" }
 )
+vim.api.nvim_set_keymap("i", "<C-k>", "<cmd>lua vim.lsp.buf.signature_help()<CR>", { noremap = true, silent = true })
+vim.api.nvim_set_keymap("s", "<C-k>", "<cmd>lua vim.lsp.buf.signature_help()<CR>", { noremap = true, silent = true })
